@@ -5,9 +5,29 @@
 </head>
 <body>
 <button id="myButton">Click me</button>
+<input type="button" value="배경색 변경" onClick="document.bgColor='red';">
+<input type="text" id="name1" onfocus="focusFunction(this.id)">
+<input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
+<input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
 <script type="text/javascript">
+function dblClickFunction(x){
+	if(document.getElementById(x).style.background == "white") {
+		document.getElementById(x).style.background = "green";
+	}else{
+		document.getElementById(x).style.background = "white";
+	}
+}
+function focusFunction(x) {
+	document.getElementById(x).style.background = "yellow";
+}
+function blurFunction(x) {
+	document.getElementById(x).style.background = "red";
+}
+
+
 // myButton이라는 아이디값을 갖는 엘리먼트를 찾아 button에 저장
 var button = document.getElementById('myButton');
+//
 button.addEventListener('click', function() {
 	document.write('button clicked!');
 });
