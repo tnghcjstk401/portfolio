@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<button id="myButton">Click me</button>
+<script type="text/javascript">
+// myButton이라는 아이디값을 갖는 엘리먼트를 찾아 button에 저장
+var button = document.getElementById('myButton');
+button.addEventListener('click', function() {
+	document.write('button clicked!');
+});
+</script>
+</body>
+</html>
