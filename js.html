@@ -5,11 +5,11 @@
 </head>
 <body>
 <button id="myButton">Click me</button>
-<form id="form_dbl" dblClick="dblClickFunction(this.id)">
+<form id="form_dbl">
 <input type="button" value="배경색 변경" onClick="document.bgColor='red';">
 <input type="text" id="name1" onfocus="focusFunction(this.id)">
 <input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
-<input type="text" id="name3" onfocus="focusFunction(this.id)">
+<input type="text" id="name3" onfocus="focusFunction(this.id)" ondblclick="dblClickFunction(this.id)">
 </form>
 <script type="text/javascript">
 function dblClickFunction(x){
